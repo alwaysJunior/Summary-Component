@@ -32,6 +32,64 @@ body {
 
 .card {
     background-color: var(--white);
-    
+    border-radius: 2rem;
+    width: 650px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result {
+    width: 50%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--light-slate-blue),var(--light-royal-blue));
+    color: var(--white);
+    border-radius: 2rem;
+}
+
+.result .title {
+    color: var(--light-lavender);
+    margin-bottom: 1rem;
+}
+
+.result .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--violet-blue), var(--persian-blue));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle h1 {
+    font-size: 50px;
+}
+.circle p{
+    color: var(--light-lavender);
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.result b {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.result .info {
+    color: var(--light-lavender);
+    font-size: 13px;
+    opacity: 0.8;
+    width: 190px;
+    margin-bottom: 1rem;
 }
 
