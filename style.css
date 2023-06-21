@@ -33,7 +33,7 @@ body {
 .card {
     background-color: var(--white);
     border-radius: 2rem;
-    width: 650px;
+    width: 600px;
 }
 
 .card-container {
@@ -78,6 +78,7 @@ body {
     color: var(--light-lavender);
     font-size: 13px;
     opacity: 0.8;
+    font-weight: 700;
 }
 
 .result b {
@@ -94,8 +95,7 @@ body {
 }
 
 .summary {
-    padding: 1.5rem;
-    margin: 0 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -121,6 +121,19 @@ body {
     align-items: center;
     padding: 0.7rem;
     text-align: center;
+}
+
+.row p b{
+    color: var(--dark-gray-blue);
+    letter-spacing: 0.3px;
+    margin-right: 1px;
+}
+
+.row p{
+    font-weight: 700;
+    opacity: 1;
+    color: lightslategray;
+    letter-spacing: 0.3px;
 }
 .row-line {
     display: flex;
@@ -169,6 +182,38 @@ body {
     border: none;
     letter-spacing: 0.4px;
     font-weight: 700;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, var(--light-slate-blue),var(--light-royal-blue));
+
+}
+
+@media screen and (max-width:650px) {
+    body {
+        align-items: flex-start;
+        background-color: white;
+    }
+    .card{
+        box-shadow: none;
+
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .result{
+        border-radius: 0 0 2rem 2rem;
+        width: 100%;
+    }
+    .result .info {
+        width: 100%;
+    }
+    .summary{
+        width: 100%;
+    }
+    .result b {
+        font-size: 1.4rem;
+    }
 }
 
 
